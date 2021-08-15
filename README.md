@@ -13,12 +13,12 @@
 1. Создать образ Docker:
 
 
-    sudo docker build -t calcapp:latest .
+    docker build -t calcapp:latest .
 
 2. Запустить созданный образ в контейнере:
 
 
-    sudo docker run -it -d -p 5000:5000 calcapp
+    docker run -it -d -p 5000:5000 calcapp
 
 В данном примере с хост машины в контейнер пробрасывается TCP порт 5000, который используется Flask по умолчанию.
 
